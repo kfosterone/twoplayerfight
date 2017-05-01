@@ -15,11 +15,39 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
+    
+    @IBOutlet weak var Player2: UIImageView!
+    
+    
+    @IBOutlet weak var Player1: UIImageView!
+    
+    
+    @IBOutlet weak var topText: UILabel!
+    
+    
+    @IBOutlet weak var player1AttackBtn: UIButton!
+    
+    
+    
+    @IBOutlet weak var player2Attackbtn: UIButton!
+    
+    
+    @IBOutlet weak var player1HP: UILabel!
+    
+    
+    @IBOutlet weak var Player2HP: UILabel!
+    
+    var attackMultiplier = [1.2,1.5,2.0,2.2,0.5,3.0]
+    
+    var player1: Player{
+        
+    }
+    var player2: Player{
+        
+    }
+    
+    
 
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10238E21EB5276C0038F910 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10238E11EB5276C0038F910 /* Player.swift */; };
 		C1939BD51EAE301D00C98D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1939BD41EAE301D00C98D6F /* AppDelegate.swift */; };
 		C1939BD71EAE301D00C98D6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1939BD61EAE301D00C98D6F /* ViewController.swift */; };
 		C1939BDA1EAE301D00C98D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1939BD81EAE301D00C98D6F /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		C1939BDF1EAE301D00C98D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1939BDD1EAE301D00C98D6F /* LaunchScreen.storyboard */; };
 		C1939BEA1EAE301E00C98D6F /* Two_Player_FIghting_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1939BE91EAE301E00C98D6F /* Two_Player_FIghting_GameTests.swift */; };
 		C1939BF51EAE301E00C98D6F /* Two_Player_FIghting_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1939BF41EAE301E00C98D6F /* Two_Player_FIghting_GameUITests.swift */; };
+		C1939C031EB0DA5B00C98D6F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1939C021EB0DA5B00C98D6F /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C10238E11EB5276C0038F910 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C1939BD11EAE301D00C98D6F /* Two Player FIghting Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Two Player FIghting Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1939BD41EAE301D00C98D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1939BD61EAE301D00C98D6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		C1939BF01EAE301E00C98D6F /* Two Player FIghting GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Two Player FIghting GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1939BF41EAE301E00C98D6F /* Two_Player_FIghting_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two_Player_FIghting_GameUITests.swift; sourceTree = "<group>"; };
 		C1939BF61EAE301E00C98D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1939C021EB0DA5B00C98D6F /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				C1939BD41EAE301D00C98D6F /* AppDelegate.swift */,
 				C1939BD61EAE301D00C98D6F /* ViewController.swift */,
 				C1939BD81EAE301D00C98D6F /* Main.storyboard */,
+				C1939C021EB0DA5B00C98D6F /* Character.swift */,
+				C10238E11EB5276C0038F910 /* Player.swift */,
 				C1939BDB1EAE301D00C98D6F /* Assets.xcassets */,
 				C1939BDD1EAE301D00C98D6F /* LaunchScreen.storyboard */,
 				C1939BE01EAE301D00C98D6F /* Info.plist */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10238E21EB5276C0038F910 /* Player.swift in Sources */,
 				C1939BD71EAE301D00C98D6F /* ViewController.swift in Sources */,
+				C1939C031EB0DA5B00C98D6F /* Character.swift in Sources */,
 				C1939BD51EAE301D00C98D6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				C1939BFB1EAE301E00C98D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1939BFC1EAE301E00C98D6F /* Build configuration list for PBXNativeTarget "Two Player FIghting GameTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				C1939BFE1EAE301E00C98D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1939BFF1EAE301E00C98D6F /* Build configuration list for PBXNativeTarget "Two Player FIghting GameUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				C1939C011EAE301E00C98D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
