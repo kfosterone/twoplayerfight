@@ -38,16 +38,76 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Player2HP: UILabel!
     
-    var attackMultiplier = [1.2,1.5,2.0,2.2,0.5,3.0]
     
-    var player1: Player{
+    @IBOutlet weak var restartButton: UIButton!
+    
+    @IBAction func restartButtonPressed(sender: AnyObject) {
+    }
+   
+    @IBOutlet weak var gameOverLabel: UILabel!
+    
+    
+    var whichPlayer = ""
+    
+    
+    var player1_HP = 200
+    
+    var player2_HP = 200
+ 
+  var attackBtn1Count = 0
+    var attackBtn2Count = 0
+    
+    func gameOver1(){
+        topText.text = "Player 1 Wins"
+        gameOverLabel.hidden = false
+        restartButton.hidden = false
+        player1AttackBtn.enabled = false
+        player2Attackbtn.enabled = false
+        
         
     }
-    var player2: Player{
+    
+    func gameOver2(){
+        
+        topText.text = "Player 2 Wins"
+        gameOverLabel.hidden = false
+        restartButton.hidden = false
+        player1AttackBtn.enabled = false
+        player2Attackbtn.enabled = false
+    
+    }
+    
+    
+    
+    @IBAction func attackBtn1Pressed(sender: AnyObject) {
+        
+        if player2_HP >= 51{
+    
+    player2_HP -= 50
+    topText.text = "Player 1 attacked for 50 HP"}
+        else { gameOver1()}
+       
+        
+        
+    }
+    
+    
+    
+    
+    @IBAction func attackBtn2Pressed(sender: AnyObject) {
+        
+        
+        if player1_HP >= 51 {
+        
+        
+        player1_HP -= 50
+            topText.text = "Player 2 attacked for 50 HP"} else { gameOver2()}
         
     }
     
     
 
-}
+
+    
+
 
