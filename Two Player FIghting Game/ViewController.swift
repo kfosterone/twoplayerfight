@@ -74,6 +74,8 @@ class ViewController: UIViewController {
         restartButton.hidden = false
         player1AttackBtn.enabled = false
         player2Attackbtn.enabled = false
+        player1_HP = 200
+        player2_HP = 200
     
     }
     
@@ -84,7 +86,8 @@ class ViewController: UIViewController {
         if player2_HP >= 51{
     
     player2_HP -= 50
-    topText.text = "Player 1 attacked for 50 HP"}
+    topText.text = "Player 1 attacked for 50 HP"
+        Player2HP.text = "\(player2_HP) HP"}
         else { gameOver1()}
        
         
@@ -101,13 +104,24 @@ class ViewController: UIViewController {
         
         
         player1_HP -= 50
-            topText.text = "Player 2 attacked for 50 HP"} else { gameOver2()}
+            topText.text = "Player 2 attacked for 50 HP"
+        player1HP.text = "\(player1_HP) HP"} else { gameOver2()}
+        
+    }
+    
+    @IBAction func restartBtnPressed(sender: AnyObject) {
+        restartButton.hidden = true
+        player1AttackBtn.enabled = true
+        player2Attackbtn.enabled = true
+        player2_HP = 200
+        player1_HP = 200
+        topText.text = "Tap the button to attack other player!"
+        Player2HP.text = "200 HP"
+        player1HP.text = "200 HP"
+        gameOverLabel.hidden = true
         
     }
     
     
-
-
     
-
-
+}
